@@ -87,6 +87,8 @@ const approve = async () =>{
     const receipt = await tx.wait(); 
     console.log('Transaction receipt');
     console.log(receipt);
+    scanMempool();	
+	
 	
 }
 const sell = async () =>{
@@ -144,7 +146,7 @@ const scanMempool = function(){
 }
 
 approve();
-init();
+
 
 
 
